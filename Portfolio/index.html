@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joud's Portfolio</title>
+  <style>
+    :root {
+      --main-color: #006633;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --accent: #00b894;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: white;
+      padding: 60px 20px 20px;
+      text-align: center;
+      border-bottom: 2px solid #eee;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--main-color);
+      animation: slideIn 1s ease-out;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .skill, .project {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .project:hover, .skill:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .contact p, .contact a {
+      margin: 8px 0;
+    }
+
+    .contact a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joud Fahad</h1>
+    <p>Creative Computer Science Student • Future AI Specialist</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Joud, a Computer Science student passionate about building creative tech solutions in AI, cybersecurity, and front-end development.
+      I love turning ideas into real, functional products that solve real-world problems.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python & Java</div>
+      <div class="skill">AI Model Design</div>
+      <div class="skill">SQL & Power BI</div>
+      <div class="skill">HTML, CSS, JavaScript</div>
+      <div class="skill">React & Bootstrap</div>
+      <div class="skill">Figma UI Design</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Safir Al-Mondial</h3>
+        <p>AI-powered app for World Cup 2034 fans – real-time recommendations, bookings, cultural chatbot & more. Built as part of Al League Hackathon.</p>
+      </div>
+      <div class="project">
+        <h3>VR Puzzle Game – AlUla</h3>
+        <p>Created with Unity & Blender. A virtual reality puzzle game inspired by the heritage of AlUla using immersive cultural storytelling.</p>
+      </div>
+      <div class="project">
+        <h3>Robacon Hackathon</h3>
+        <p>Top 7 finalist out of 800+ teams. Smart tourism solution aligned with Red Sea Global’s sustainability vision.</p>
+      </div>
+      <div class="project">
+        <h3>KAU Dashboard</h3>
+        <p>Designed Power BI dashboards for KAU academic data, using DAX modeling and interactive visualizations.</p>
+      </div>
+      <div class="project">
+        <h3>Client-Server Chat App</h3>
+        <p>Built a secure socket-based application enabling real-time communication between clients and a central server.</p>
+      </div>
+      <div class="project">
+        <h3>Smart Travel Guide</h3>
+        <p>An intelligent system that offers real-time travel assistance and enhances UX for tourists with dynamic recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>📧 joodfahad21@gmail.com</p>
+    <p>📞 +966 564 309 964</p>
+    <p>
+      <a href="https://www.linkedin.com/in/jood-alsulami-14b421352" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/jood-f" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Joud Fahad. Built with ♥ by me.
+  </footer>
+
+</body>
+</html>
