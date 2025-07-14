@@ -6,10 +6,10 @@
   <title>Joud's Portfolio</title>
   <style>
     :root {
-      --main-color: #006633;
+      --main-color: #4c4c4c;
       --bg-color: #f9f9f9;
       --text-color: #333;
-      --accent: #00b894;
+      --accent: #d4b1c3;
     }
 
     * {
@@ -83,6 +83,11 @@
       line-height: 1.8;
     }
 
+    .colored-heading {
+    color: var(--accent);
+    }
+
+
     .skills, .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -135,24 +140,59 @@
 <body>
 
   <header>
-    <h1>Joud Fahad</h1>
-    <p>Creative Computer Science Student • Future AI Specialist</p>
+    <h1>Joud Fahad Alsulami</h1>
+    <p>Computer Science Student</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
+    <a href="#projects">Projects</a> 
+    <a href="#certifications">Certifications</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I'm Joud, a Computer Science student passionate about building creative tech solutions in AI, cybersecurity, and front-end development.
-      I love turning ideas into real, functional products that solve real-world problems.
+      I'm Joud, a Computer Science student, Developing strong skills in programming, software 
+      development, and problem-solving. Continuously expanding my knowledge in cyber security, AI, Front-End Development, and data management. 
+      With a keen interest in innovation and IT solutions. I seek to build a career, contributing to technological advancements 
+      and system optimization.
     </p>
   </section>
+
+  <section id="education">
+  <h2>Education</h2>
+  <div class="skill">
+    <h3 style="color: var(--accent);">King Abdulaziz University – Saudi Arabia</h3>
+    <p><em>Bachelor's in Computer Science | GPA: 4.75 / 5.00 | Expected Graduation: 2026</em></p>
+    <ul style="padding-left: 20px; line-height: 1.7;">
+      <li>Developed a strong foundation in programming, algorithms, and data structures.</li>
+      <li>Gained expertise in software development, databases, and system analysis.</li>
+      <li>Prepared for careers in IT, cybersecurity, AI, and software engineering.</li>
+      <li>Enhanced problem-solving, critical thinking, and computational skills.</li>
+    </ul>
+  </div>
+</section>
+
+  <section id="experience">
+  <h2>Experience</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Internship Trainee – General Administration of IT</h3>
+      <p><em>King Abdulaziz University, Saudi Arabia | Jun – Aug 2025</em></p>
+      <ul style="padding-left: 20px; line-height: 1.7;">
+        <li>Refactored legacy systems using OOP and UML for business process re-engineering.</li>
+        <li>Extracted structured data from academic Word files using Python and visualized it with a custom front-end.</li>
+        <li>Designed a responsive university homepage using HTML, CSS, Bootstrap, and React with modern UI/UX.</li>
+        <li>Created a full Power BI dashboard including data import, modeling (DAX), and interactive visualizations.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
   <section id="skills">
     <h2>Skills</h2>
@@ -160,41 +200,72 @@
       <div class="skill">Python & Java</div>
       <div class="skill">AI Model Design</div>
       <div class="skill">SQL & Power BI</div>
-      <div class="skill">HTML, CSS, JavaScript</div>
+      <div class="skill">Front-End Development</div>
       <div class="skill">React & Bootstrap</div>
       <div class="skill">Figma UI Design</div>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Safir Al-Mondial</h3>
-        <p>AI-powered app for World Cup 2034 fans – real-time recommendations, bookings, cultural chatbot & more. Built as part of Al League Hackathon.</p>
-      </div>
-      <div class="project">
-        <h3>VR Puzzle Game – AlUla</h3>
-        <p>Created with Unity & Blender. A virtual reality puzzle game inspired by the heritage of AlUla using immersive cultural storytelling.</p>
-      </div>
-      <div class="project">
-        <h3>Robacon Hackathon</h3>
-        <p>Top 7 finalist out of 800+ teams. Smart tourism solution aligned with Red Sea Global’s sustainability vision.</p>
-      </div>
-      <div class="project">
-        <h3>KAU Dashboard</h3>
-        <p>Designed Power BI dashboards for KAU academic data, using DAX modeling and interactive visualizations.</p>
-      </div>
-      <div class="project">
-        <h3>Client-Server Chat App</h3>
-        <p>Built a secure socket-based application enabling real-time communication between clients and a central server.</p>
-      </div>
-      <div class="project">
-        <h3>Smart Travel Guide</h3>
-        <p>An intelligent system that offers real-time travel assistance and enhances UX for tourists with dynamic recommendations.</p>
-      </div>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Robacon Hackathon – Tourism Track</h3>
+      <p><em>May 2025</em></p>
+      <p>Top 7 finalist out of 800+ teams. Developed a smart tourism solution aligned with Red Sea Global's sustainability vision.</p>
     </div>
-  </section>
+
+    <div class="project">
+      <h3>Safir Al-Mondial – AI Tourism & Fan App</h3>
+      <p><em>Feb – May 2025 | Al League Hackathon (Tuwaiq Academy + SCAI)</em></p>
+      <p>Built an intelligent mobile app to enhance the World Cup 2034 fan experience. Features include personalized guides, match booking, real-time suggestions, and an AI chatbot for food and cultural help.</p>
+    </div>
+
+    <div class="project">
+      <h3>VR Puzzle Game – AlUla</h3>
+      <p><em>April 2025 | Computer Graphics Course</em></p>
+      <p>Designed a VR game using Blender and Unity set in the heritage of AlUla. Implemented puzzle mechanics and immersive cultural storytelling.</p>
+    </div>
+
+    <div class="project">
+      <h3>Client-Server Socket-Based Application</h3>
+      <p><em>December 2024 | Computer Networks Project</em></p>
+      <p>Developed a secure socket-based application enabling real-time communication between multiple clients and a central server.</p>
+    </div>
+
+    <div class="project">
+      <h3>Smart Travel Guide</h3>
+      <p><em>August 2024 | Software Engineering Project</em></p>
+      <p>Built an intelligent travel guide system that offers real-time assistance and enhances user experience for travelers.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="projects">
+
+    <div class="project">
+      <img src="CybersecurityIBM.png" alt="Cybersecurity Certificate" style="width:100%; border-radius:8px; margin-bottom:10px;" />
+      <h3>Certified Cybersecurity Fundamentals Certificate</h3>
+      <p><em>IBM SkillsBuild | June 2024 – August 2024</em></p>
+    </div>
+
+    <div class="project">
+      <img src="AI_League.png" alt="AI League Certificate" style="width:100%; border-radius:8px; margin-bottom:10px;" />
+      <h3>Certified AI League Hackathon Certificate</h3>
+      <p><em>February 2025 – May 2025</em></p>
+    </div>
+
+    <div class="project">
+      <img src="Data_Analysis.png" alt="Data Analysis Certificate" style="width:100%; border-radius:8px; margin-bottom:10px;" />
+      <h3>Certified Data Analysis Bootcamp Certificate</h3>
+      <p><em>February 2025</em></p>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
